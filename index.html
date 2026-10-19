@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern websites for small businesses.">
+  <title>Flowos | Web Developer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #f5f7ff;
+      line-height: 1.6;
+    }
+
+    header, section, footer {
+      padding: 28px max(6%, calc((100% - 1100px) / 2));
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo { font-size: 21px; font-weight: bold; }
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    .hero { padding-top: 90px; padding-bottom: 90px; }
+    .tag { color: #7dd3fc; font-weight: bold; }
+    h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.1; margin: 18px 0; }
+    h2 { font-size: 30px; margin-bottom: 20px; }
+    p { color: #b7c1d5; margin: 12px 0; }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 22px;
+      background: #38bdf8;
+      color: #07111f;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #151d32;
+      padding: 24px;
+      border: 1px solid #27344e;
+      border-radius: 14px;
+    }
+
+    .card h3 { margin: 12px 0; }
+    .icon { font-size: 32px; }
+    .services { display: flex; flex-wrap: wrap; gap: 12px; }
+    .services span {
+      padding: 12px 16px;
+      background: #151d32;
+      border-radius: 8px;
+    }
+
+    footer { border-top: 1px solid #27344e; color: #b7c1d5; }
+    html { scroll-behavior: smooth; }
+
+    @media (max-width: 500px) {
+      nav a { margin-left: 0; margin-right: 12px; }
+      .hero { padding-top: 55px; padding-bottom: 55px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FLOWOS<span style="color:#38bdf8">.</span></div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="tag">WEB DESIGN & DEVELOPMENT</span>
+      <h1>Modern websites<br>for growing businesses.</h1>
+      <p>I create clean, responsive websites that help small businesses
+        build a professional online presence.</p>
+      <a class="button" href="#projects">Explore My Work →</a>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <p>Concept projects showcasing my design and development skills.</p>
+      <div class="projects">
+        <article class="card">
+          <div class="icon">🍽️</div>
+          <h3>Restaurant Website</h3>
+          <p>A modern restaurant website with menu, location and contact information.</p>
+        </article>
+        <article class="card">
+          <div class="icon">✂️</div>
+          <h3>Barbershop Website</h3>
+          <p>A stylish website showcasing services, prices and booking options.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🏥</div>
+          <h3>Clinic Website</h3>
+          <p>A professional layout for healthcare services and appointment requests.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>What I Offer</h2>
+      <div class="services">
+        <span>Landing Pages</span>
+        <span>Business Websites</span>
+        <span>Responsive Design</span>
+        <span>HTML & CSS</span>
+        <span>Website Redesign</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Have a project in mind?</h2>
+      <p>Let's create a professional website for your business.</p>
+      <a class="button"
+         href="https://www.fiverr.com/"
+         target="_blank" rel="noopener">
+        Hire Me on Fiverr
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Flowos. All rights reserved.</p>
+  </footer>
+</body>
+</html>
